@@ -1,6 +1,6 @@
 CREATE DATABASE gascheck;
-CREATE USER gascheck WITH PASSWORD "gascheck";
-GRANT ALL PRIVILEGES ON DATABASE "gascheck" to tester;
+CREATE USER gascheck WITH PASSWORD 'gascheck';
+GRANT ALL PRIVILEGES ON DATABASE gascheck to gascheck;
 
 CREATE TABLE pricecheck (
     station_id varchar(40) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE station (
     brandname varchar(40),
     city varchar(40),
     street varchar(40),
-    streetno varchar(40),
+    streetno varchar(40)
     last_checked_ts timestamp
 );
 
